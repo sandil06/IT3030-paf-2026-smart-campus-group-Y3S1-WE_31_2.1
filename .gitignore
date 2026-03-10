@@ -1,0 +1,22 @@
+# Java build artifacts
+target/
+*.class
+*.jar
+*.war
+
+# Node artifacts
+node_modules/
+build/
+
+# Environment files
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -276,7 +276,7 @@ const AdminDashboard = () => {
         <div className="table-wrap"><SkeletonRows n={5} /></div>
       ) : tab === 'bookings' ? (
         <BookingList bookings={filteredBookings} onApprove={handleApprove} onReject={(id) => openRejectModal(id, 'booking')} showActions />
-      ) : (
+      ) : tab === 'tickets' ? (
         /* ── Ticket Table ── */
         <div className="table-wrap">
           {filteredTickets.length === 0 ? (

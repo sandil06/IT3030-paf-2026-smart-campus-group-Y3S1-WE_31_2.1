@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🏫 Smart Campus Operations Hub
 
-## Available Scripts
+**A comprehensive, production-grade management system designed to streamline campus facilities, streamline bookings, track maintenance requests, and deliver real-time notifications.**
 
-In the project directory, you can run:
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Latest-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## ✨ Key Features & Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Smart Campus Operations Hub is built on a split-stack architecture, utilizing a robust **Java Spring Boot API** alongside a modern, responsive **React Glassmorphism UI**.
 
-### `npm run build`
+### 🔐 Authentication & Control
+- **OAuth Integration**: Secure Google Sign-in to remove password friction and guarantee identity.
+- **Role-Based Access Control (RBAC)**: Distinct permissions for standard `USER`s and system `ADMIN`s. Administrators have access to powerful centralized dashboards.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🏛️ Resource Catalog & Booking
+- **Facility Discovery**: Users can browse, filter, and discover available campus resources (Labs, Meeting Rooms, Equipment).
+- **Time-Aware Bookings**: Intelligent conflict detection algorithm prevents double-booking resources for overlapping time slots.
+- **Workflow State Machine**: Admin review process allowing Bookings to move smoothly from `PENDING` to `APPROVED` or `REJECTED` (with forced rationale).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🛠️ Helpdesk & Maintenance Ticketing
+- **Issue Reporting**: Campus members can open support tickets and categorize them by infrastructure/IT, assigning a specific `Priority`.
+- **Comment Threads**: Built-in bidirectional commenting allows administrators and users to communicate directly on specific tickets.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔔 Real-Time Notifications
+- **System Alerts**: Automatically triggers alerts and unread-badges for users when their bookings are processed or their tickets are resolved.
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 👥 Team & Responsibilities
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was developed collaboratively, divided into 5 distinct application domains:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Member / Module | Core Contribution |
+| :--- | :--- |
+| 🧑‍💻 **Member 1** <br>*(Facilities)* | Engineered the **Resource Management Domain**. Developed the Admin CRUD interfaces allowing creation, modification, and tracking of campus assets via dynamic tile display. |
+| 🧑‍💻 **Member 2** <br>*(Booking Engine)* | Architected the **Reservation System**. Integrated date/time logic, built the backend collision detector, and created the "My Bookings" user interface. |
+| 🧑‍💻 **Member 3** <br>*(Maintenance Ticks)*| Constructed the **Ticketing Lifecycle**. Handled state transitions, priority enums, and built the embedded comment synchronization system. |
+| 🧑‍💻 **Member 4** <br>*(Notifications)* | Created the **Event Broadcaster**. Developed the global notification overlay, read/unread tracking metrics, and alert repository. |
+| 🧑‍💻 **Member 5** <br>*(Auth & Core)* | Built the **Security Foundation**. Handled OAuth token interception, global exception handling, routing guardrails, and overarching UI logic. |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+## 🚀 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Prerequisites
+Before attempting to run the project, ensure you have the following installed:
+* **Java 17 JDK** or higher
+* **Node.js 18.x** or higher (with NPM)
+* **MongoDB** (Running locally on the default port `27017`)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Quick Launch
+For a seamless startup experience, simply execute the provided startup script in Windows PowerShell from the root directory:
 
-### Code Splitting
+```powershell
+.\start_app.ps1
+```
+*(This script will automatically boot the Spring Boot API on Port `9090` and sequence the React frontend launch on Port `3000`.)*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Manual Launch
 
-### Analyzing the Bundle Size
+If you prefer to start the servers independently:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Terminal 1 (Backend API):**
+```bash
+cd backend
+./mvnw spring-boot:run
+```
 
-### Making a Progressive Web App
+**Terminal 2 (React Frontend):**
+```bash
+cd frontend
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+## 🎨 UI/UX Design System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The platform has been custom-styled without heavy reliance on CSS frameworks, demonstrating core frontend proficiency. We adopted a **"Light Glassmorphism"** theme:
+* **Typography:** `Inter` font family for absolute clarity.
+* **Palette:** Deep Purple (`#8458B1`), Sky Blue (`#A0D3B8`), and Lavender (`#E5EAF5`) backgrounds to emit an airy, modern feel.
+* **Componentry:** Fully responsive collapsible sidebars, floating modal overlays, state-colored badge identifiers, and simulated glass overlays featuring CSS backdrop-filters.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+<div align="center">
+  <i>Developed for University Project Submission.</i>
+</div>

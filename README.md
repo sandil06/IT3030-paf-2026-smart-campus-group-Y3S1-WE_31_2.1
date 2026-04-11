@@ -2,6 +2,12 @@
 
 # 🏫 Smart Campus Operations Hub
 
+# This is our group members
+IT23849006
+IT23714502
+IT23714670
+IT23626874
+
 **A comprehensive, production-grade management system designed to streamline campus facilities, streamline bookings, track maintenance requests, and deliver real-time notifications.**
 
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)

@@ -49,11 +49,11 @@ This project was developed collaboratively, divided into 5 distinct application 
 
 | Member / Module | Core Contribution |
 | :--- | :--- |
-| 🧑‍💻 **Member 1** <br>*(Facilities)* | Engineered the **Resource Management Domain**. Developed the Admin CRUD interfaces allowing creation, modification, and tracking of campus assets via dynamic tile display. |
-| 🧑‍💻 **Member 2** <br>*(Booking Engine)* | Architected the **Reservation System**. Integrated date/time logic, built the backend collision detector, and created the "My Bookings" user interface. |
-| 🧑‍💻 **Member 3** <br>*(Maintenance Ticks)*| Constructed the **Ticketing Lifecycle**. Handled state transitions, priority enums, and built the embedded comment synchronization system. |
-| 🧑‍💻 **Member 4** <br>*(Notifications)* | Created the **Event Broadcaster**. Developed the global notification overlay, read/unread tracking metrics, and alert repository. |
-| 🧑‍💻 **Member 5** <br>*(Auth & Core)* | Built the **Security Foundation**. Handled OAuth token interception, global exception handling, routing guardrails, and overarching UI logic. |
+| 🧑‍💻 **Member 1 (IT23714670   KAVISHKA P.V.U)** <br>*(Facilities)* | Engineered the **Resource Management Domain**. Developed the Admin CRUD interfaces allowing creation, modification, and tracking of campus assets via dynamic tile display. |
+| 🧑‍💻 **Member 2 (IT23714502   Wijethunga K.S.N)** <br>*(Booking Engine)* | Architected the **Reservation System**. Integrated date/time logic, built the backend collision detector, and created the "My Bookings" user interface. |
+| 🧑‍💻 **Member 3 (IT23626874   Yashawini G.D.J.)** <br>*(Maintenance Ticks)*| Constructed the **Ticketing Lifecycle**. Handled state transitions, priority enums, and built the embedded comment synchronization system. |
+| 🧑‍💻 **Member 4 (IT23849006   Jayasooriya S.R)** <br>*(Notifications)* | Created the **Event Broadcaster**. Developed the global notification overlay, read/unread tracking metrics, and alert repository. |
+| 🧑‍💻 **Member 5 (IT23849006   Jayasooriya S.R)** <br>*(Auth & Core)* | Built the **Security Foundation**. Handled OAuth token interception, global exception handling, routing guardrails, and overarching UI logic. |
 
 <br>
 

@@ -93,5 +93,5 @@ The platform has been custom-styled without heavy reliance on CSS frameworks, de
 
 <br>
 <div align="center">
-  <i>Developed for University Project Submission.</i>
+  
 </div>
